@@ -42,7 +42,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="#about"
+              to="#chefs"
               className="nav-link text-gray-600 hover:text-primary transition-colors font-medium px-3 py-2 rounded-md"
               data-scroll
             >
@@ -107,7 +107,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to="#about"
+            to="#chefs"
             className="block px-3 py-2 rounded-md text-base font-medium nav-link text-gray-600 hover:text-primary"
             data-scroll
           >
