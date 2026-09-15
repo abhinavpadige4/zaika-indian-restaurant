@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Menu from './components/Menu';
 import AboutChefs from './components/AboutChefs';
@@ -8,14 +10,17 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen overflow-hidden">
-      <Hero />
-      <Menu />
-      <AboutChefs />
-      <Testimonials />
-      <BookingContact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="min-h-screen overflow-hidden">
+        <Navbar />
+        <Hero />
+        <Menu />
+        <AboutChefs />
+        <Testimonials />
+        <BookingContact />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
