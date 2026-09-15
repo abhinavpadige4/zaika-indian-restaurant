@@ -27,36 +27,36 @@ const Menu = () => {
           <button
             onClick={() => setFilter('all')}
             className={filter === 'all' 
-              ? 'bg-primary text-white' 
-              : 'bg-secondary/20 text-secondary border border-secondary/30'
-            } + ' px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary/10 hover:text-primary'
+              ? 'bg-primary text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary/10 hover:text-primary' 
+              : 'bg-secondary/20 text-secondary border border-secondary/30 px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary/10 hover:text-primary'
+            }
           >
             All
           </button>
           <button
             onClick={() => setFilter('veg')}
             className={filter === 'veg' 
-              ? 'bg-primary text-white' 
-              : 'bg-secondary/20 text-secondary border border-secondary/30'
-            } + ' px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary/10 hover:text-primary'
+              ? 'bg-primary text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary/10 hover:text-primary' 
+              : 'bg-secondary/20 text-secondary border border-secondary/30 px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary/10 hover:text-primary'
+            }
           >
             Veg
           </button>
           <button
             onClick={() => setFilter('non-veg')}
             className={filter === 'non-veg' 
-              ? 'bg-primary text-white' 
-              : 'bg-secondary/20 text-secondary border border-secondary/30'
-            } + ' px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary/10 hover:text-primary'
+              ? 'bg-primary text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary/10 hover:text-primary' 
+              : 'bg-secondary/20 text-secondary border border-secondary/30 px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary/10 hover:text-primary'
+            }
           >
             Non-Veg
           </button>
           <button
             onClick={() => setFilter('special')}
             className={filter === 'special' 
-              ? 'bg-primary text-white' 
-              : 'bg-secondary/20 text-secondary border border-secondary/30'
-            } + ' px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary/10 hover:text-primary'
+              ? 'bg-primary text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary/10 hover:text-primary' 
+              : 'bg-secondary/20 text-secondary border border-secondary/30 px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary/10 hover:text-primary'
+            }
           >
             Chef's Specials
           </button>
