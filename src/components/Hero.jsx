@@ -2,28 +2,41 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="relative h-[90vh] bg-[url('/assets/hero-bg.jpg')] bg-center bg-cover flex flex-col items-center justify-center text-center text-white overflow-hidden">
+    <section 
+      id="hero"
+      className="relative h-[90vh] bg-[url('/assets/hero-bg.jpg')] bg-center bg-cover flex flex-col items-center justify-center text-center text-white overflow-hidden"
+    >
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       
       <div className="relative z-10 fade-in">
-        <h1 className="text-5xl md:text-6xl font-bold gradient-text mb-4">
+        <h1 
+          className="text-5xl md:text-6xl font-bold gradient-text mb-4"
+          aria-label="Welcome to Zaika Indian Restaurant"
+        >
           Authentic Indian Flavors
         </h1>
-        <p className="text-xl md:text-2xl mb-6 max-w-2xl">
+        <p 
+          className="text-xl md:text-2xl mb-6 max-w-2xl"
+          aria-label="Experience authentic Indian cuisine crafted with passion"
+        >
           Crafted with Passion, Served with Love
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <button 
+          <Link 
+            to="#booking"
             className="btn-hover-effect bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-all duration-300 transform hover:scale-105"
+            aria-label="Book your table now"
           >
             Book Your Table
-          </button>
-          <button 
+          </Link>
+          <Link 
+            to="#menu"
             className="btn-hover-effect bg-secondary/20 text-secondary px-8 py-3 rounded-lg font-semibold border border-secondary/50 hover:bg-secondary/30 hover:text-dark transition-all duration-300 transform hover:scale-105"
+            aria-label="View our menu"
           >
             View Our Menu
-          </button>
+          </Link>
         </div>
       </div>
     </section>
