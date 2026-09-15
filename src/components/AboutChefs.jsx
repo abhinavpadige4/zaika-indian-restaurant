@@ -3,9 +3,15 @@ import chefsData from '../data/chefs.json';
 
 const AboutChefs = () => {
   return (
-    <section className="py-16 bg-white">
+    <section 
+      id="chefs"
+      className="py-16 bg-white"
+    >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 gradient-text">
+        <h2 
+          className="text-4xl font-bold text-center mb-12 gradient-text"
+          aria-label="Meet our master chefs"
+        >
           Meet Our Master Chefs
         </h2>
         
@@ -18,7 +24,7 @@ const AboutChefs = () => {
               <div className="relative">
                 <img 
                   src={chef.image} 
-                  alt={chef.name} 
+                  alt={`${chef.name}, specialist in ${chef.specialties.join(', ')}`}
                   className="w-full h-48 object-cover"
                   loading="lazy"
                 />
