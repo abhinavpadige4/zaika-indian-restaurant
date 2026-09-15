@@ -83,7 +83,7 @@ const Testimonials = () => {
               className={`${index === currentIndex 
                 ? 'w-3 h-3 bg-primary rounded-full' 
                 : 'w-3 h-3 bg-secondary/30 rounded-full hover:bg-secondary/50'
-              } transition-all duration-300`}
+              } transition-all duration-300"}
             />
           ))}
         </div>
