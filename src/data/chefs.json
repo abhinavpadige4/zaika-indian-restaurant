@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Chef Arjun Patel",
+    "image": "/assets/chefs/arjun.jpg",
+    "bio": "Executive Chef with 15+ years of experience in North Indian cuisine, specializing in traditional tandoori and biryani preparations.",
+    "specialties": ["Biryani", "Tandoori", "Kebabs"],
+    "experience": "15+ years"
+  },
+  {
+    "id": 2,
+    "name": "Chef Priya Sharma",
+    "image": "/assets/chefs/priya.jpg",
+    "bio": "Master of South Indian flavors, expert in dosas, idlis, and coastal seafood preparations with authentic spice blends.",
+    "specialties": ["Dosa", "Seafood Curries", "Idli"],
+    "experience": "12+ years"
+  },
+  {
+    "id": 3,
+    "name": "Chef Vikram Singh",
+    "image": "/assets/chefs/vikram.jpg",
+    "bio": "Pastry and bread specialist, creating authentic Indian breads and desserts using traditional techniques.",
+    "specialties": ["Naan Varieties", "Gulab Jamun", "Jalebi"],
+    "experience": "10+ years"
+  }
+]
