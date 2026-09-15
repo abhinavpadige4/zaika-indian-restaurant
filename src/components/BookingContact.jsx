@@ -34,7 +34,7 @@ const BookingContact = () => {
     
     setIsSubmitting(true);
     
-    // Submit to Formspree
+    // Submit to Formspree - NOTE: Replace 'your-form-id' with actual Formspree form ID
     fetch('https://formspree.io/f/your-form-id', {
       method: 'POST',
       headers: {
@@ -238,80 +238,69 @@ const BookingContact = () => {
                     aria-label="Number of guests"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
                   >
-                    <option value="">Select Party Size</option>
-                    <option value="1">1 Person</option>
-                    <option value="2">2 Persons</option>
-                    <option value="3">3 Persons</option>
-                    <option value="4">4 Persons</option>
-                    <option value="5">5+ Persons</option>
+                    <option value="">Select party size</option>
+                    <option value="1">1 person</option>
+                    <option value="2">2 people</option>
+                    <option value="3">3 people</option>
+                    <option value="4">4 people</option>
+                    <option value="5">5 people</option>
+                    <option value="6">6 people</option>
+                    <option value="7">7+ people</option>
                   </select>
+                </div>
+                
+                <div className="col-span-2">
+                  <label 
+                    htmlFor="specialRequests"
+                    className="block text-sm font-medium mb-2"
+                  >
+                    Special Requests
+                  </label>
+                  <textarea
+                    id="specialRequests"
+                    name="specialRequests"
+                    value={formData.specialRequests}
+                    onChange={handleChange}
+                    rows="4"
+                    aria-label="Special requests or dietary requirements"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
+                  />
                 </div>
               </div>
               
-              <div>
-                <label 
-                  htmlFor="specialRequests"
-                  className="block text-sm font-medium mb-2"
-                >
-                  Special Requests
-                </label>
-                <textarea
-                  id="specialRequests"
-                  name="specialRequests"
-                  value={formData.specialRequests}
-                  onChange={handleChange}
-                  rows="4"
-                  aria-label="Any special requests or dietary requirements"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                />
-              </div>
-              
-              <div className="flex items-center justify-between">
-                <button 
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="btn-primary px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-all duration-300 transform hover:scale-105"
-                  aria-label={isSubmitting ? 'Submitting...' : 'Submit booking request'}
-                >
-                  {isSubmitting ? 'Submitting...' : 'Submit Booking'}
-                </button>
-                
-                {submitStatus === 'success' && (
-                  <p className="text-green-600 mt-4">Booking submitted successfully!</p>
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
+              >
+                {isSubmitting ? (
+                  <>
+                    <span className="mr-2">Booking...</span>
+                    <svg className="animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
+                    </svg>
+                  </>
+                ) : (
+                  'Book Table'
                 )}
-                
-                {submitStatus === 'error' && (
-                  <p className="text-red-600 mt-4">Failed to submit. Please try again.</p>
-                )}
-              </div>
+              </button>
             </form>
           </div>
           
-          {/* Contact Info / Image */}
-          <div className="hidden md:block text-center">
-            <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-dark mb-4">Contact Us</h3>
-              <p className="text-gray-600">
-                Have questions? We're here to help!
-              </p>
-              <div className="space-y-3">
-                <p className="flex items-center space-x-3 text-gray-700">
-                  <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 01-5.516 0l-2.257-1.13a1 1 0 01-.502-1.21l1.498-4.493a1 1 0 01.948-.684h3.28a2 2 0 012 2zM12 15a3 3 0 110-6 3 3 0 010 6z" />
-                  </svg>
-                  <span>+1 (555) 123-4567</span>
-                </p>
-                <p className="flex items-center space-x-3 text-gray-700">
-                  <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  <span>info@zaikaindian.com</span>
-                </p>
-                <p className="flex items-center space-x-3 text-gray-700">
-                  <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  </svg>
-                  <span>123 Spice Route, Mumbai</span>
+          {/* Booking Info/Image */}
+          <div className="hidden md:block">
+            <div className="relative h-96 w-full rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src="/assets/hero-bg.jpg" 
+                alt="Zaika Indian Restaurant dining area" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/70 to-secondary/50"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-8">
+                <h3 className="text-2xl font-bold mb-4">Experience Authentic Indian Cuisine</h3>
+                <p className="text-lg max-w-md">
+                  Join us for a culinary journey through the rich flavors of India. Our restaurant offers traditional dishes made with fresh, authentic ingredients and time-honored cooking techniques.
                 </p>
               </div>
             </div>
