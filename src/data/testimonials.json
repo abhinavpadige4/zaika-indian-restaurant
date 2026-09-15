@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Priya Mehta",
-    "image": "/assets/testimonials/priya.jpg",
+    "image": "/assets/testimonials/anita.jpg",
     "rating": 5,
     "text": "Amazing flavors and service! The butter chicken was absolutely divine and the staff made us feel like family.",
     "date": "March 2024"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "Anita Desai",
-    "image": "/assets/testimonials/anita.jpg",
+    "image": "/assets/testimonials/michael.jpg",
     "rating": 4,
     "text": "Loved the vegetarian options and the mango lassi was refreshing. Great ambiance and attentive service.",
     "date": "January 2024"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "name": "Michael Chen",
-    "image": "/assets/testimonials/michael.jpg",
+    "image": "/assets/testimonials/anita.jpg",
     "rating": 5,
     "text": "Celebrated our anniversary here and it was perfect. The lamb rogan josh was exceptional and the service was impeccable.",
     "date": "December 2023"
