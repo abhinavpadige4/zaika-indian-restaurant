@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Butter Chicken",
+    "description": "Creamy tomato-based curry with tender chicken pieces",
+    "price": 14.99,
+    "category": "non-veg",
+    "image": "/assets/menu/butter-chicken.jpg",
+    "special": false
+  },
+  {
+    "id": 2,
+    "name": "Paneer Tikka Masala",
+    "description": "Grilled paneer in rich tomato and cashew gravy",
+    "price": 13.99,
+    "category": "veg",
+    "image": "/assets/menu/paneer-tikka-masala.jpg",
+    "special": false
+  },
+  {
+    "id": 3,
+    "name": "Chicken Biryani",
+    "description": "Fragrant basmati rice with marinated chicken and spices",
+    "price": 15.99,
+    "category": "non-veg",
+    "image": "/assets/menu/chicken-biryani.jpg",
+    "special": true
+  },
+  {
+    "id": 4,
+    "name": "Vegetable Samosa",
+    "description": "Crispy pastry filled with spiced potatoes and peas",
+    "price": 5.99,
+    "category": "veg",
+    "image": "/assets/menu/vegetable-samosa.jpg",
+    "special": false
+  },
+  {
+    "id": 5,
+    "name": "Lamb Rogan Josh",
+    "description": "Slow-cooked lamb in Kashmiri red chili gravy",
+    "price": 16.99,
+    "category": "non-veg",
+    "image": "/assets/menu/lamb-rogan-josh.jpg",
+    "special": true
+  },
+  {
+    "id": 6,
+    "name": "Dal Makhani",
+    "description": "Black lentils slow-cooked with butter and cream",
+    "price": 12.99,
+    "category": "veg",
+    "image": "/assets/menu/dal-makhani.jpg",
+    "special": false
+  },
+  {
+    "id": 7,
+    "name": "Garlic Naan",
+    "description": "Soft flatbread infused with garlic and cilantro",
+    "price": 3.99,
+    "category": "veg",
+    "image": "/assets/menu/garlic-naan.jpg",
+    "special": false
+  },
+  {
+    "id": 8,
+    "name": "Mango Lassi",
+    "description": "Refreshing yogurt drink with ripe mango pulp",
+    "price": 4.99,
+    "category": "veg",
+    "image": "/assets/menu/mango-lassi.jpg",
+    "special": false
+  }
+]
